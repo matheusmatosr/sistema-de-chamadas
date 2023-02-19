@@ -1,4 +1,4 @@
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Navigate } from 'react-router-dom';
 
 export default function RouteWrapper({
     component: Component,
@@ -16,11 +16,11 @@ export default function RouteWrapper({
     }
 
     if (!signed && isPrivate){
-        return <Redirect to="" />
+        return <Navigate to="/" />
     }
 
     if (signed && !isPrivate){
-        return <Redirect to="dashboard" />
+        return <Navigate to="/dashboard" />
     }
 
     return(
