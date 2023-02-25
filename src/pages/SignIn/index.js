@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
-import './signin.css';
+import './index.css';
 
 function SignIn() {
   const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ function SignIn() {
     e.preventDefault();
     alert('clicou')
   }
-  
+
   return (
     <div className="container-center">
       <div className="login">
@@ -23,7 +23,7 @@ function SignIn() {
           <h1>Entrar</h1>
           <input type="text" placeholder='email@email.com' value={email} onChange={(e) => setEmail(e.target.value)}/>
           <input type="password" placeholder='********' value={password} onChange={(e) => setPassword(e.target.value)}/>
-          <input type="submit">Acessar</input>
+          <button type="submit">Acessar</button>
         </form>
 
         <Link to="/register">Criar uma nova conta</Link>
