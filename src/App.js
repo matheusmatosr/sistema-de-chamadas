@@ -1,10 +1,19 @@
-import { BrowserRouter } from "react-router-dom";
-import Routes from "./routes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import Dashboard from "./pages/Dashboard";
+import { Fragment } from "react";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <Routes />
+      <Fragment>
+        <Routes>
+          <Route path="/" element={ <SignIn /> } />
+          <Route path="/register" element={ <SignUp /> } />
+          <Route path="/dashboard" element={ <Dashboard /> } />
+        </Routes>
+      </Fragment>
     </BrowserRouter>
   );
 }
