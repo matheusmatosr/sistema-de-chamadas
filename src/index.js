@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
+import AuthProvider from './contents/auth';
+import Profile from './pages/Profile';
+import Client from './pages/Clients';
 
 const router = createBrowserRouter([
   {
@@ -18,12 +23,23 @@ const router = createBrowserRouter([
   {
     path: '/dashboard',
     element: <Dashboard />
+  },
+  {
+    path: '/profile',
+    element: <Profile />
+  },
+  {
+    path: '/costumers',
+    element: <Client />
   }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <AuthProvider>
+    <React.StrictMode>
+      <ToastContainer autoClose={1000} />
+      <RouterProvider router={router}/>
+    </React.StrictMode>
+  </AuthProvider>
 );

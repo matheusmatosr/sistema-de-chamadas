@@ -4,14 +4,14 @@ import Header from "../../components/Header";
 import Title from '../../components/Title';
 import { FiDatabase } from 'react-icons/fi';
 
-function Dashboard() {
+function Client() {
   const { signOut } = useContext(AuthContext);
 
   return (
     <div className="App">
       <Header />
       <div className='content'>
-        <Title name="Dashboard">
+        <Title name="Clientes">
           <FiDatabase size={25} />
         </Title>
       </div>
@@ -20,4 +20,4 @@ function Dashboard() {
   );
 }
   
-export default Dashboard;
+export default Client;
