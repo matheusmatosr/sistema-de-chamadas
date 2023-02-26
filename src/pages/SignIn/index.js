@@ -9,7 +9,8 @@ function SignIn() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
 
-  const handleLogin = (e) => {
+  function handleLogin(){
+    /*
     e.preventDefault();
 
     if (!email | !password) {
@@ -23,7 +24,7 @@ function SignIn() {
       toast.warn("Foi detectado campos semelhantes!")
       return;
     }
-
+    */
     toast.success("Login efetuado com sucesso!");
     <Link to="/dashboard" />
   };
@@ -39,7 +40,7 @@ function SignIn() {
           <h1>Entrar</h1>
           <input type="text" placeholder='email@email.com' value={email} onChange={(e) => setEmail(e.target.value)}/>
           <input type="password" placeholder='********' value={password} onChange={(e) => setPassword(e.target.value)}/>
-          <button type="submit">Acessar</button>
+          <Link to="/dashboard" className='button' color='#FFF'>Acessar</Link>
         </form>
 
         <Link to="/register">Criar uma nova conta</Link>
