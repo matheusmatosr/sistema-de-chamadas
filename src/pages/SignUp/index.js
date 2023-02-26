@@ -2,17 +2,33 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../SignIn/index.css';
+import { toast } from 'react-toastify';
 
 function SignUp() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert('clicou')
-  }
+  const [error, setError] = useState(false);
 
+  const handleRegister = (e) => {
+    e.preventDefault();
+
+    if (!email | !password | !nome) {
+      setError("Preencha todos os campos");
+      toast.warn("Foi detectado campos vazios!");
+      return;
+    }
+
+    if (email === nome){
+      setError("Não é permitido campos iguais");
+      toast.warn("Foi detectado campos semelhantes!")
+      return;
+    }
+
+    toast.success("Login efetuado com sucesso!");
+    <Link to="/dashboard" />
+  };
+  
   return (
     <div className="container-center">
       <div className="login">
@@ -20,7 +36,7 @@ function SignUp() {
           <img src={logo} alt="Sistema Logo" />
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleRegister}>
           <h1>Cadastre-se!</h1> 
           <input type="text" placeholder='Seu nome' value={nome} onChange={(e) => setNome(e.target.value)}/>
           <input type="text" placeholder='email@email.com' value={email} onChange={(e) => setEmail(e.target.value)}/>
