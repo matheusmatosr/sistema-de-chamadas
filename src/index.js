@@ -8,6 +8,8 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
 import AuthProvider from './contents/auth';
+import Profile from './pages/Profile';
+import Client from './pages/Clients';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
   {
     path: '/dashboard',
     element: <Dashboard />
+  },
+  {
+    path: '/profile',
+    element: <Profile />
+  },
+  {
+    path: '/costumers',
+    element: <Client />
   }
 ])
 

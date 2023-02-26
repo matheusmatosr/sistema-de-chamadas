@@ -11,15 +11,15 @@ export default function Header() {
                 
             </div>
 
-            <Link>
+            <Link to="/dashboard">
                 <FiHome color="#FFF" size={24} />
                 Chamados
             </Link>
-            <Link>
+            <Link to="/costumers">
                 <FiUser color="#FFF" size={24} />
                 Clientes
             </Link>
-            <Link>
+            <Link to="/profile">
                 <FiSettings color="#FFF" size={24} />
                 Configurações
             </Link>
