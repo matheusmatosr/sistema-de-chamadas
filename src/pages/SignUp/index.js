@@ -25,7 +25,7 @@ function SignUp() {
       return;
     }
 
-    toast.success("Login efetuado com sucesso!");
+    toast.success("Cadastro efetuado com sucesso!");
     <Link to="/dashboard" />
   };
   

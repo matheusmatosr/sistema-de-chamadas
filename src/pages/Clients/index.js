@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from '../../contents/auth';
 import Header from "../../components/Header";
 import Title from '../../components/Title';
-import { FiDatabase } from 'react-icons/fi';
+import { FaGrinAlt } from 'react-icons/fa';
 
 function Client() {
   const { signOut } = useContext(AuthContext);
@@ -12,7 +12,7 @@ function Client() {
       <Header />
       <div className='content'>
         <Title name="Clientes">
-          <FiDatabase size={25} />
+          <FaGrinAlt size={25} />
         </Title>
       </div>
       <button onClick={() => signOut() }>Logout</button>
