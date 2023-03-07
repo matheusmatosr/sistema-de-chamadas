@@ -1,14 +1,13 @@
 import './index.css';
 import { Link } from 'react-router-dom';
 import avatar from '../../assets/avatar.png';
-import { FiHome, FiUser, FiSettings } from 'react-icons/fi';
+import { FiHome, FiUser, FiSettings, FiLogOut } from 'react-icons/fi';
 
 export default function Header() {
     return (
         <div className='sidebar'>
             <div>
                 <img src={avatar} alt="Foto de perfil" />
-                
             </div>
 
             <Link to="/dashboard">
@@ -22,6 +21,10 @@ export default function Header() {
             <Link to="/profile">
                 <FiSettings color="#FFF" size={24} />
                 Configurações
+            </Link>
+            <Link to="/" className='logout'>
+                <FiLogOut color="#FFF" size={24} />
+                Sair
             </Link>
         </div>
     )
