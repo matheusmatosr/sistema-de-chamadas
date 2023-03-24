@@ -45,6 +45,7 @@ function SignIn() {
 
         <Link to="/register">Criar uma nova conta</Link>
       </div>
+      <p className='detalhe'>@ 2023 by  <a className='myName' href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
     </div>
   );
 }
