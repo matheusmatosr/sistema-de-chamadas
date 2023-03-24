@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../SignIn/index.css';
 import { toast } from 'react-toastify';
@@ -9,6 +9,7 @@ function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -26,7 +27,7 @@ function SignUp() {
     }
 
     toast.success("Cadastro efetuado com sucesso!");
-    <Link to="/dashboard" />
+    navigate("/")
   };
   
   return (
