@@ -1,5 +1,6 @@
 .container-center{
     height: 100%;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +10,7 @@
 .login{
     background: #eaeaea;
     width: 600px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,6 +67,18 @@ form button {
     margin: 1.5em 0;
     color: #000;
     cursor: pointer;
+}
+
+.detalhe{
+    display: flex;    
+    color: #fff;
+    position: absolute;
+    margin-top: 680px;
+}
+
+.myName{
+    margin-left: 5px;
+    color: rgb(144, 171, 230);
 }
 
 @media screen and (max-width: 700px) {

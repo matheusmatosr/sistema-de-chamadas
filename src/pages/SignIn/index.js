@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import './index.css';
 import { toast } from 'react-toastify';
@@ -8,6 +8,7 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   function handleLogin(e){
     e.preventDefault();
@@ -25,7 +26,7 @@ function SignIn() {
     }
   
     toast.success("Login efetuado com sucesso!");
-    <Link to="/dashboard" />
+    navigate("/dashboard");
   };
   
   return (
@@ -44,6 +45,7 @@ function SignIn() {
 
         <Link to="/register">Criar uma nova conta</Link>
       </div>
+      <p className='detalhe'>@ 2023 by  <a className='myName' href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
     </div>
   );
 }
