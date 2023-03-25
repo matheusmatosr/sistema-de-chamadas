@@ -46,6 +46,7 @@ function SignUp() {
         </form>
 
         <Link to="/">Já tem uma conta? Entre</Link>
+        <p className='detalhe' style={{marginTop: '715px'}}>@ 2023 by  <a className='myName'  style={{color: 'rgb(144, 171, 230)', marginTop: '0px', marginLeft: '5px'}} href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
       </div>
     </div>
   );
