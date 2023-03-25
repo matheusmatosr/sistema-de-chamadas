@@ -10,11 +10,13 @@
 .login{
     background: #eaeaea;
     width: 600px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 10px solid #606064;
+    border-radius: 25px;
 }
 
 .login-area{
@@ -26,6 +28,7 @@
 
 .logo-area img{
     padding: 20px;
+    padding-top: 35px;
     width: 170px;
     height: 130px;
 }
@@ -73,7 +76,7 @@ form button {
     display: flex;    
     color: #fff;
     position: absolute;
-    margin-top: 680px;
+    margin-top: 670px;
 }
 
 .myName{
