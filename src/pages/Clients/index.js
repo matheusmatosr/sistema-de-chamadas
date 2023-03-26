@@ -3,16 +3,32 @@ import { AuthContext } from '../../contents/auth';
 import Header from "../../components/Header";
 import Title from '../../components/Title';
 import { FaUser } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Client() {
   const { signOut } = useContext(AuthContext);
   const [ nome, setNome ] = useState('');
   const [ cnpj, setCnpj ] = useState('');
   const [ endereco, setEndereco ] = useState('');
+  const navigate = useNavigate();
 
   function handleRegister(e) {
     e.preventDefault();
-    alert("Teste")
+    e.preventDefault();
+        
+    if (!nome | !cnpj | !endereco) {
+      toast.warn("Foi detectado campos vazios!");
+      return;
+    }
+    
+    if(cnpj === endereco){
+      toast.warn("Foi detectado campos semelhantes!")
+      return;
+    }
+
+    toast.success("Alterações salvas com sucesso!");
+    navigate("/dashboard");
   }
 
   return (

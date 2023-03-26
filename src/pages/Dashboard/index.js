@@ -35,7 +35,7 @@ function Dashboard() {
             </thead>
             <tbody>
               <tr>
-                <td data-label="Cliente">Mercado esquina</td>
+                <td data-label="Cliente">Padaria</td>
                 <td data-label="Assunto">Suporte</td>
                 <td data-label="Status">
                   <span className="badge" style={{backgroundColor: '#999'}} >
@@ -44,14 +44,13 @@ function Dashboard() {
                 </td>
                 <td data-label="Cadastrado">04/03/2020</td>
                 <td data-label="#"></td>
-                  <button className="action" style={{backgroundColor: '#3583f6'}}>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
                     <FiSearch color="#fff" size={17} />
                   </button>
-                  <button className="action" style={{backgroundColor: '#f6a935'}}>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
                     <FiEdit2 color="#fff" size={17} />
                   </button>
               </tr>
-
 
               <tr>
                 <td data-label="Cliente">Pousada Lr</td>
@@ -61,12 +60,48 @@ function Dashboard() {
                     Em aberto
                   </span>
                 </td>
-                <td data-label="Cadastrado">04/03/2020</td>
+                <td data-label="Cadastrado">28/11/2021</td>
                 <td data-label="#"></td>
-                  <button className="action" style={{backgroundColor: '#3583f6'}}>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
                     <FiSearch color="#fff" size={17} />
                   </button>
-                  <button className="action" style={{backgroundColor: '#f6a935'}}>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
+                    <FiEdit2 color="#fff" size={17} />
+                  </button>
+              </tr>
+
+              <tr>
+                <td data-label="Cliente">Mercado</td>
+                <td data-label="Assunto">Estoque</td>
+                <td data-label="Status">
+                  <span className="badge" style={{backgroundColor: '#008000'}} >
+                    Realizado
+                  </span>
+                </td>
+                <td data-label="Cadastrado">30/10/2022</td>
+                <td data-label="#"></td>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
+                    <FiSearch color="#fff" size={17} />
+                  </button>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
+                    <FiEdit2 color="#fff" size={17} />
+                  </button>
+              </tr>
+
+              <tr>
+                <td data-label="Cliente">Serralheria</td>
+                <td data-label="Assunto">Peças</td>
+                <td data-label="Status">
+                  <span className="badge" style={{backgroundColor: '#800000', width: '60px'}} >
+                    Pendente
+                  </span>
+                </td>
+                <td data-label="Cadastrado">20/05/2019</td>
+                <td data-label="#"></td>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
+                    <FiSearch color="#fff" size={17} />
+                  </button>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
                     <FiEdit2 color="#fff" size={17} />
                   </button>
               </tr>
