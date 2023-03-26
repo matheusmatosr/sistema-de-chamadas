@@ -6,7 +6,7 @@ import avatar from '../../assets/avatar.png';
 import './index.css';
 
 export default function Profile(){
-   
+
     return(
         <div>
             <Header />
@@ -36,7 +36,7 @@ export default function Profile(){
                     </form>
                 </div>
                 <div className='container'>
-                    <button className='logout-btn'>Sair</button>
+                    <button className='logout-btn' onSubmit={handleGo}>Sair</button>
                 </div>
             </div>
         </div>
