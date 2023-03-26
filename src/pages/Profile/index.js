@@ -4,8 +4,36 @@ import Title from '../../components/Title';
 import { FiSettings, FiUpload } from 'react-icons/fi';
 import avatar from '../../assets/avatar.png';
 import './index.css';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 export default function Profile(){
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const navigate = useNavigate();
+
+    function handleGo(e) {
+        e.preventDefault();
+        navigate("/dashboard");
+    }
+
+    function handleSave(e) {
+        e.preventDefault();
+        
+        if (!name | !email) {
+            toast.warn("Foi detectado campos vazios!");
+            return;
+        }
+        
+        if(name === email){
+            toast.warn("Foi detectado campos semelhantes!")
+            return;
+        }
+
+        toast.success("Alterações salvas com sucesso!");
+        navigate("/dashboard");
+    }
 
     return(
         <div>
@@ -27,16 +55,16 @@ export default function Profile(){
                         </label>
 
                         <label>Nome</label>
-                        <input type="text" placeholder='Seu nome' />
+                        <input type="text" placeholder='Seu nome' value={name} onChange={(e) => setName(e.target.value)}/>
 
                         <label>Email</label>
-                        <input type="text" placeholder='teste@teste.com' disabled={false}/>
+                        <input type="text" placeholder='teste@teste.com' disabled={false} value={email} onChange={(e) => setEmail(e.target.value)}/>
 
-                        <button type='submit'>Salvar</button>
+                        <button type='submit' onClick={handleSave}>Salvar</button>
                     </form>
                 </div>
                 <div className='container'>
-                    <button className='logout-btn' onSubmit={handleGo}>Sair</button>
+                    <button className='logout-btn' onClick={handleGo}>Sair</button>
                 </div>
             </div>
         </div>
