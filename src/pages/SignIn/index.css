@@ -66,6 +66,11 @@ form button {
     text-align: center;
 }
 
+form button:hover{
+    background-color: #5e4ea6;
+    transform: scale(1.0);
+}
+
 .login a{
     margin: 1.5em 0;
     color: #000;
