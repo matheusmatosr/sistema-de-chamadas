@@ -8,20 +8,17 @@ function SignUp() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(false);
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
 
     if (!email | !password | !nome) {
-      setError("Preencha todos os campos");
       toast.warn("Foi detectado campos vazios!");
       return;
     }
 
     if (email === nome){
-      setError("Não é permitido campos iguais");
       toast.warn("Foi detectado campos semelhantes!")
       return;
     }
@@ -45,7 +42,7 @@ function SignUp() {
           <button type="submit">Cadastrar</button>
         </form>
 
-        <Link to="/">Já tem uma conta? Entre</Link>
+        <Link to="/">Já tem uma conta? <a style={{color:'blue'}}>Entre</a></Link>
         <p className='detalhe' style={{marginTop: '715px'}}>@ 2023 by  <a className='myName'  style={{color: 'rgb(144, 171, 230)', marginTop: '0px', marginLeft: '5px'}} href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
       </div>
     </div>
