@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard';
 import AuthProvider from './contents/auth';
 import Profile from './pages/Profile';
 import Client from './pages/Clients';
+import New from './pages/New';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: '/costumers',
     element: <Client />
+  },
+  {
+    path: '/new',
+    element: <New />
   }
 ])
 
