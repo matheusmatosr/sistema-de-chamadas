@@ -3,7 +3,6 @@ import Header from '../../components/Header';
 import Title from '../../components/Title';
 import { FiSettings, FiUpload } from 'react-icons/fi';
 import avatar from '../../assets/avatar.png';
-import './index.css';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';

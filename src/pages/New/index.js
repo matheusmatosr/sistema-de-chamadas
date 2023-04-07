@@ -52,15 +52,15 @@ export default function New(){
                         />
                         <span>Atendido</span>
                     </form>
+
+                    <label>Complemento</label>
+                    <textarea
+                        type="text"
+                        placeholder="Descreva seu problema"
+                    />
+                    
+                    <button type="submit">Registrar</button>
                 </div>
-
-                <label>Complemento</label>
-                <textarea
-                    type="text"
-                    placeholder="Descreva seu problema"
-                />
-
-                <button type="submit">Registrar</button>
             </div>
         </div>
     )
