@@ -11,6 +11,7 @@ import AuthProvider from './contents/auth';
 import Profile from './pages/Profile';
 import Client from './pages/Clients';
 import New from './pages/New';
+import Edit from './pages/Edit';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: '/new',
     element: <New />
+  },
+  {
+    path: '/edit',
+    element: <Edit />
   }
 ])
 

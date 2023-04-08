@@ -1,14 +1,24 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from '../../contents/auth';
 import Header from "../../components/Header";
 import Title from '../../components/Title';
 import { FiDatabase, FiEdit2, FiPlus, FiSearch } from 'react-icons/fi';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './index.css';
 import Modal from '../../components/Modal';
 
 function Dashboard() {
   const { signOut } = useContext(AuthContext);
+  const [showPostModal, setShowPostModal] = useState(false);
+  const navigate = useNavigate();
+
+  function toggleModal(){
+    setShowPostModal(!showPostModal);
+  }
+  function toggleEdit(e) {
+    e.preventDefault();
+    navigate("/edit");
+  }
 
   return (
     <div className="App">
@@ -99,10 +109,10 @@ function Dashboard() {
                 </td>
                 <td data-label="Cadastrado">20/05/2019</td>
                 <td data-label="#"></td>
-                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}} onClick={() => toggleModal()}>
                     <FiSearch color="#fff" size={17} />
                   </button>
-                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}} onClick={toggleEdit}>
                     <FiEdit2 color="#fff" size={17} />
                   </button>
               </tr>
@@ -111,7 +121,12 @@ function Dashboard() {
         </>
       </div>
 
-      <Modal />
+      {showPostModal && (
+        <Modal 
+          close={() => setShowPostModal(!showPostModal)}
+        />
+      )}
+
     </div>
   );
 }
