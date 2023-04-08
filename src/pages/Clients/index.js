@@ -41,7 +41,7 @@ function Client() {
 
         <div className="container">
           <form className="form-profile" onSubmit={handleRegister}>
-            <label>Nome fantasia</label>
+            <label>Nome fantasia:</label>
             <input 
               type="text"
               placeholder="Nome da empresa" 
@@ -49,7 +49,7 @@ function Client() {
               onChange={(e) => setNome(e.target.value)}  
             />
 
-            <label>CNPJ</label>
+            <label>CNPJ:</label>
             <input 
               type="text"
               placeholder="Digite o CNPJ" 
@@ -57,7 +57,7 @@ function Client() {
               onChange={(e) => setCnpj(e.target.value)}  
             />
 
-            <label>Endereço</label>
+            <label>Endereço:</label>
             <input 
               type="text"
               placeholder="Endereço da empresa" 

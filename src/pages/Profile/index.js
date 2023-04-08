@@ -53,10 +53,10 @@ export default function Profile(){
                             <img src={avatar} alt="foto de perfil" width={200} height={200} />
                         </label>
 
-                        <label>Nome</label>
+                        <label>Nome:</label>
                         <input type="text" placeholder='Seu nome' value={name} onChange={(e) => setName(e.target.value)}/>
 
-                        <label>Email</label>
+                        <label>Email:</label>
                         <input type="text" placeholder='teste@teste.com' disabled={false} value={email} onChange={(e) => setEmail(e.target.value)}/>
 
                         <button type='submit' onClick={handleSave}>Salvar</button>

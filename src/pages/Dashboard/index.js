@@ -5,6 +5,7 @@ import Title from '../../components/Title';
 import { FiDatabase, FiEdit2, FiPlus, FiSearch } from 'react-icons/fi';
 import { Link } from "react-router-dom";
 import './index.css';
+import Modal from '../../components/Modal';
 
 function Dashboard() {
   const { signOut } = useContext(AuthContext);
@@ -109,6 +110,8 @@ function Dashboard() {
           </table>
         </>
       </div>
+
+      <Modal />
     </div>
   );
 }

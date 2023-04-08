@@ -9,6 +9,7 @@ form input[type="radio"]{
 
 form input[type="radio"]:not(:first-child){
     margin-left: 15px;
+    font-size: 1.3em;
 }
 
 .status span{
@@ -20,38 +21,6 @@ form input[type="radio"]:not(:first-child){
     margin-bottom: 1em;
 }
 
-.container{
-    display: flex;
-    background-color: #e0d9d9;
-    border-radius: 5px;
-    padding: 0.8em;
-    align-items: center;
-    margin-bottom: 1em;
-}
-
-.form-profile label{
-    margin-bottom: 0.5em;
-    font-size: 1.4em;
-}
-
-.form-profile input, textarea, select{
-    margin-bottom: 1em;
-    padding: 0.7em;
-    border: 0;
-    border-radius: 5px;
-    max-width: 600px;
-}
-
-.form-profile input:disabled{
-    cursor: not-allowed;
-}
-
-.form-profile button{
-    margin-top: 20px;
-    max-width: 600px;
-}
-
-.form-profile button:hover{
-    background-color: #5e4ea6;
-    transform: scale(1.0);
+.btn{
+    margin-bottom: 15px;
 }
