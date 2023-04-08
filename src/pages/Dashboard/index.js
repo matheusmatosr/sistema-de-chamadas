@@ -55,10 +55,10 @@ function Dashboard() {
                 </td>
                 <td data-label="Cadastrado">04/03/2020</td>
                 <td data-label="#"></td>
-                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}} onClick={() => toggleModal()}>
                     <FiSearch color="#fff" size={17} />
                   </button>
-                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}} onClick={toggleEdit}>
                     <FiEdit2 color="#fff" size={17} />
                   </button>
               </tr>
@@ -73,10 +73,10 @@ function Dashboard() {
                 </td>
                 <td data-label="Cadastrado">28/11/2021</td>
                 <td data-label="#"></td>
-                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}} onClick={() => toggleModal()}>
                     <FiSearch color="#fff" size={17} />
                   </button>
-                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}} onClick={toggleEdit}>
                     <FiEdit2 color="#fff" size={17} />
                   </button>
               </tr>
@@ -91,10 +91,10 @@ function Dashboard() {
                 </td>
                 <td data-label="Cadastrado">30/10/2022</td>
                 <td data-label="#"></td>
-                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}} onClick={() => toggleModal()}>
                     <FiSearch color="#fff" size={17} />
                   </button>
-                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}}>
+                  <button className="action" style={{backgroundColor: '#f6a935', marginTop: '7px', borderRadius: '5px'}} onClick={toggleEdit}>
                     <FiEdit2 color="#fff" size={17} />
                   </button>
               </tr>

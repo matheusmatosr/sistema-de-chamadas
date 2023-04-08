@@ -3,6 +3,8 @@ import Header from "../../components/Header";
 import Title from "../../components/Title";
 import '../New/index.css';
 import { useState } from 'react';
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export default function New(){
 
@@ -18,6 +20,20 @@ export default function New(){
         setAssunto(e.target.value);
     }
 
+    const navigate = useNavigate();
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+    
+        if (!assunto | !status | !complemento) {
+          toast.warn("Foi detectado campos vazios!");
+          return;
+        }
+    
+        toast.success("Chamada editada com sucesso!");
+        navigate("/dashboard");
+    };
+
     return(
         <div>
             <Header />
@@ -28,7 +44,7 @@ export default function New(){
                 </Title>
 
                 <div className="container">
-                    <form className="form-profile">
+                    <form className="form-profile" onSubmit={handleRegister}>
                         <label>Clientes:</label>
                         <select>
                             <option key={1}>Mercado</option>
