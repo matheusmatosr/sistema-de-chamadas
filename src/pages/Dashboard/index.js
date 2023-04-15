@@ -107,7 +107,7 @@ function Dashboard() {
                     Pendente
                   </span>
                 </td>
-                <td data-label="Cadastrado">20/05/2019</td>
+                <td data-label="Cadastrado">25/05/2023</td>
                 <td data-label="#"></td>
                   <button className="action" style={{backgroundColor: '#3583f6', margin: '0 10px', marginTop: '7px', borderRadius: '5px'}} onClick={() => toggleModal()}>
                     <FiSearch color="#fff" size={17} />
