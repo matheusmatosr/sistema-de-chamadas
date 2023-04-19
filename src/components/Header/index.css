@@ -58,10 +58,6 @@
     padding: 1px 16px;
 }
 
-.logout{
-    margin-top: 350px;
-}
-
 @media screen and (max-width: 700px) {
     .sidebar{
         width: 100%;
