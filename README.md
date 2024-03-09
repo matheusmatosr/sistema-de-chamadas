@@ -1,6 +1,6 @@
 # Sistema de Chamadas
 
-
+Sistema com login e cadastro, após logado é disponibilizado as paginas de dashboard (gerenciar, criar ou remover uma chamada), de cliente (para realizar cadastros) e de configuração.
 
 ## Para rodar o projeto, siga o tutorial abaixo.
 
