@@ -35,7 +35,7 @@ export default function New(){
     };
 
     return(
-        <div>
+        <div className="container-new">
             <Header />
 
             <div className="content">
@@ -67,7 +67,7 @@ export default function New(){
                                 onChange={handleOptionChange}
                                 checked={ status === 'Aberto'}
                             />
-                            <span>Em aberto</span>
+                            <span>Aberto</span>
                             
                             <input
                                 type="radio"

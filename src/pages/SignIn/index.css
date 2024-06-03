@@ -34,7 +34,6 @@
 }
 
 form{
-    margin-top: 1.5em;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -77,11 +76,18 @@ form button:hover{
     cursor: pointer;
 }
 
-.detalhe{
+.footer{
     display: flex;    
     color: #fff;
     position: absolute;
-    margin-top: 670px;
+    margin-top: 715px;
+}
+
+.footerCadastro{
+    display: flex;    
+    color: #fff;
+    position: absolute;
+    margin-top: 715px;
 }
 
 .myName{
@@ -93,6 +99,14 @@ form button:hover{
     .login{
         padding: 20px;
         width: 400px;
-        height: 430px;
+        height: 450px;
+    }
+
+    .footer {
+        margin-top: 620px;
+    }
+
+    .footerCadastro {
+        margin-top: 675px;
     }
 }

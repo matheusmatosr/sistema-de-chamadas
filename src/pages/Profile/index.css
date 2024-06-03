@@ -1,3 +1,7 @@
+.container-profile {
+    padding-bottom: 20px;
+}
+
 .container{
     display: flex;
     background-color: #e0d9d9;

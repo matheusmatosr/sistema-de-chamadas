@@ -82,5 +82,14 @@ table td .badge{
     table{
         border: 0;
     }
-}
 
+    table th {
+        padding: 0.80em;
+        font-size: 9.5px;
+    }
+
+    table td{
+        padding: 0.80em;
+        font-size: 12px;
+    }
+}

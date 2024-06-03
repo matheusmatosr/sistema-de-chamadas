@@ -41,7 +41,8 @@ function Dashboard() {
                 <th scope="col">Assunto</th>
                 <th scope="col">Status</th>
                 <th scope="col">Cadastrado</th>
-                <th scope="col">#</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
@@ -50,7 +51,7 @@ function Dashboard() {
                 <td data-label="Assunto">Suporte</td>
                 <td data-label="Status">
                   <span className="badge" style={{backgroundColor: '#999'}} >
-                    Em aberto
+                    Aberto
                   </span>
                 </td>
                 <td data-label="Cadastrado">04/03/2020</td>
@@ -68,7 +69,7 @@ function Dashboard() {
                 <td data-label="Assunto">Hotelaria</td>
                 <td data-label="Status">
                   <span className="badge" style={{backgroundColor: '#999'}} >
-                    Em aberto
+                    Aberto
                   </span>
                 </td>
                 <td data-label="Cadastrado">28/11/2021</td>

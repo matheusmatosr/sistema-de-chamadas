@@ -35,7 +35,7 @@ export default function Profile(){
     }
 
     return(
-        <div>
+        <div className='container-profile'>
             <Header />
             <div className='content'>
                 <Title name="Minha conta">
