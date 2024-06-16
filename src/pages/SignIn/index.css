@@ -1,6 +1,5 @@
 .container-center{
     height: 100%;
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,37 +75,10 @@ form button:hover{
     cursor: pointer;
 }
 
-.footer{
-    display: flex;    
-    color: #fff;
-    position: absolute;
-    margin-top: 715px;
-}
-
-.footerCadastro{
-    display: flex;    
-    color: #fff;
-    position: absolute;
-    margin-top: 715px;
-}
-
-.myName{
-    margin-left: 5px;
-    color: rgb(144, 171, 230);
-}
-
 @media screen and (max-width: 700px) {
     .login{
         padding: 20px;
         width: 400px;
         height: 450px;
-    }
-
-    .footer {
-        margin-top: 620px;
-    }
-
-    .footerCadastro {
-        margin-top: 675px;
     }
 }

@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import './index.css';
 import { toast } from 'react-toastify';
+import Footer from '../../components/Footer';
 
 function SignIn() {
   const [email, setEmail] = useState('');
@@ -42,7 +43,7 @@ function SignIn() {
 
         <Link to="/register"><a style={{color:'blue'}}>Criar</a> uma nova conta</Link>
       </div>
-      <p className='footer'>@ 2023 by  <a className='myName' href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import '../SignIn/index.css';
 import { toast } from 'react-toastify';
+import Footer from '../../components/Footer';
 
 function SignUp() {
   const [nome, setNome] = useState('');
@@ -43,8 +44,8 @@ function SignUp() {
         </form>
 
         <Link to="/">Já tem uma conta? <a style={{color:'blue'}}>Entre</a></Link>
-        <p className='footerCadastro'>@ 2023 by  <a className='myName'  style={{color: 'rgb(144, 171, 230)', marginTop: '0px', marginLeft: '5px'}} href="https://www.linkedin.com/in/matheus-matos-1a523221b/">Matheus Matos</a></p>
       </div>
+      <Footer />
     </div>
   );
 }
