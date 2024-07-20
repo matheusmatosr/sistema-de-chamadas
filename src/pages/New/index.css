@@ -25,6 +25,11 @@ form input[type="radio"]:not(:first-child){
     margin-bottom: 1em;
 }
 
+.status .checked{
+    width: 10px;
+    height: 10px;
+}
+
 .btn{
     margin-bottom: 15px;
 }
@@ -32,7 +37,7 @@ form input[type="radio"]:not(:first-child){
 @media screen and (max-width: 600px){
     .status {
         margin-top: -10px;
-        width: 300px;
+        width: 290px;
     }
 
     .status span{

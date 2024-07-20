@@ -66,6 +66,7 @@ export default function New(){
                                 value="Aberto"
                                 onChange={handleOptionChange}
                                 checked={ status === 'Aberto'}
+                                className="checked"
                             />
                             <span>Em aberto</span>
                             
@@ -75,6 +76,7 @@ export default function New(){
                                 value="Progresso"
                                 onChange={handleOptionChange}
                                 checked={ status === 'Progresso'}
+                                className="checked"
                             />
                             <span>Progresso</span>
                             
@@ -84,6 +86,7 @@ export default function New(){
                                 value="Atendido"
                                 onChange={handleOptionChange}
                                 checked={ status === 'Atendido'}
+                                className="checked"
                             />
                             <span>Atendido</span>
                         </div>
