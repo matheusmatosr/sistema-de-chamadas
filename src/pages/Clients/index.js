@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AuthContext } from '../../contents/auth';
+import { AuthContext } from '../../contexts/auth';
 import Header from "../../components/Header";
 import Title from '../../components/Title';
 import { FaUser } from 'react-icons/fa';

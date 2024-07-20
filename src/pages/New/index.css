@@ -31,8 +31,11 @@ form input[type="radio"]:not(:first-child){
 
 @media screen and (max-width: 600px){
     .status {
-        font-size: 15px;
         margin-top: -10px;
-        width: 310px;
+        width: 300px;
+    }
+
+    .status span{
+        font-size: 1em;
     }
 }

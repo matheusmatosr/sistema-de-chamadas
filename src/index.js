@@ -7,7 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
-import AuthProvider from './contents/auth';
+import AuthProvider from './contexts/auth';
 import Profile from './pages/Profile';
 import Client from './pages/Clients';
 import New from './pages/New';
